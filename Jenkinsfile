@@ -1,11 +1,16 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'Node 14'
+    }
+
     stages {        
         stage('Test') {
             steps {
-                sh "$YARN_PATH/yarn install --frozen-lockfile"
-                sh "$YARN_PATH/yarn test"
+                sh 'npm install -g yarn'
+                sh 'yarn install --frozen-lockfile'
+                sh 'yarn test'
             }
         }
     }
