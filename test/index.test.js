@@ -1,4 +1,4 @@
-const { PORT } = require("../index"); // Import the app and valRef1
+//const { PORT } = require("../index"); // Import the app and valRef1
 
 //describe("Server", () => {
 //  it("valRef1 has the correct value", () => {
