@@ -13,7 +13,7 @@ pipeline {
                 sh 'yarn test'
             }
         }
-    }
+    
     stage('Build Docker Image') {
         when { 
             anyOf {
@@ -97,4 +97,5 @@ pipeline {
                 
             }
     }
+  }
 }
