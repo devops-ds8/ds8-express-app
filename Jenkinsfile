@@ -52,8 +52,7 @@ pipeline {
                     hostPort = '3002'
                 }
                 // Run the Docker image
-                //sh "/usr/local/bin/docker run -d -p ${hostPort}:3001 --name ${containerName} ds8expressapp"
-                sh "/usr/local/docker run -d -p 3003:3003 --name ds8reactapp ds8reactapp"    
+                sh "/usr/local/bin/docker run -d -p ${hostPort}:3001 --name ${containerName} ds8expressapp"    
                 sleep 30
                 }
             }
